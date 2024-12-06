@@ -1,0 +1,25 @@
+Bölüm 1: 
+Bu bölüm, temiz kod kavramını ve neden önemli olduğunu ele alıyor.
+Kötü kodun, yazılım projelerinde zamanla birikerek büyük sorunlara yol açabileceği, bakım maliyetini artırabileceği ve geliştirmeyi yavaşlatabileceği vurgulanıyor.
+Temiz kod yazmanın bir zanaat olduğu, tıpkı diğer zanaatlar gibi ustalık gerektirdiği belirtiliyor.
+
+
+Bölüm 2: Anlamlı İsimler
+Bu bölüm, yazılımda kullanılan isimlerin (değişkenler, fonksiyonlar, sınıflar, paketler vb.) anlamlı ve açıklayıcı olması gerektiğini vurguluyor. Anlamlı isimler kullanmanın, kodun okunabilirliğini ve anlaşılırlığını artırdığı, böylece kodun bakımını ve geliştirilmesini kolaylaştırdığı belirtiliyor.
+Bölümde, anlamlı isimler oluşturmak için kullanılabilecek bazı prensipler ve teknikler detaylandırılıyor:
+Niyet Açığa Çıkaran İsimler Kullanın: Bir değişkenin veya fonksiyonun ne işe yaradığını ismiyle açıkça belirtin.
+Yanlış Bilgi Vermeyin: İsimler, kodun işlevini doğru bir şekilde yansıtmalıdır.
+Anlamlı Ayrımlar Yapın: Benzer isimler kullanarak karışıklığa neden olmaktan kaçının.
+Telaffuz Edilebilir İsimler Kullanın: Kod hakkında konuşurken telaffuz edilebilir isimler kullanmak, iletişimi kolaylaştırır.
+Aranabilir İsimler Kullanın: Kod içinde arama yaparken kolayca bulunabilecek isimler kullanın.
+Kodlamalardan Kaçının: Macar Notasyonu gibi kodlamalar kullanmayın.
+Zihinsel Haritalamadan Kaçının: İsimleri kısaltmayın veya kodun işlevini anlamak için zihinsel bir haritalama yapmayı gerektirmeyin.
+Sezgisel Olmayın: Komik veya esprili isimler kullanmayın, açık ve net isimler tercih edin.
+Kavram Başına Bir Kelime Seçin: Aynı kavram için farklı kelimeler kullanmaktan kaçının.
+Kelime Oyunlarından Kaçının: İsimleri kelime oyunlarıyla karmaşıklaştırmayın.
+Çözüm Alanı İsimleri Kullanın: Uygulama alanına özgü isimler kullanın.
+Problem Alanı İsimleri Kullanın: Problem alanına özgü isimler kullanın.
+Anlamlı Bağlam Ekleyin: İsimlere, gerektiğinde anlamlı bir bağlam ekleyin.
+Gereksiz Bağlam Eklemeyin: İsimleri gereksiz uzatmayın.
+
+ 
