@@ -5,7 +5,8 @@ Temiz kod yazmanın bir zanaat olduğu, tıpkı diğer zanaatlar gibi ustalık g
 
 
 Bölüm 2: Anlamlı İsimler
-Bu bölüm, yazılımda kullanılan isimlerin (değişkenler, fonksiyonlar, sınıflar, paketler vb.) anlamlı ve açıklayıcı olması gerektiğini vurguluyor. Anlamlı isimler kullanmanın, kodun okunabilirliğini ve anlaşılırlığını artırdığı, böylece kodun bakımını ve geliştirilmesini kolaylaştırdığı belirtiliyor.
+Bu bölüm, yazılımda kullanılan isimlerin (değişkenler, fonksiyonlar, sınıflar, paketler vb.) anlamlı ve açıklayıcı olması gerektiğini vurguluyor. 
+Anlamlı isimler kullanmanın, kodun okunabilirliğini ve anlaşılırlığını artırdığı, böylece kodun bakımını ve geliştirilmesini kolaylaştırdığı belirtiliyor.
 Bölümde, anlamlı isimler oluşturmak için kullanılabilecek bazı prensipler ve teknikler detaylandırılıyor:
 Niyet Açığa Çıkaran İsimler Kullanın: Bir değişkenin veya fonksiyonun ne işe yaradığını ismiyle açıkça belirtin.
 Yanlış Bilgi Vermeyin: İsimler, kodun işlevini doğru bir şekilde yansıtmalıdır.
