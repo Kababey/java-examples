@@ -23,4 +23,38 @@ Problem Alanı İsimleri Kullanın: Problem alanına özgü isimler kullanın.
 Anlamlı Bağlam Ekleyin: İsimlere, gerektiğinde anlamlı bir bağlam ekleyin.
 Gereksiz Bağlam Eklemeyin: İsimleri gereksiz uzatmayın.
 
+Bölüm 3: Fonksiyonlar 
+Küçük olmalı: fonksiyonların olabildiği kadar küçük olması gerekiyor
+Tek bir şeyi yapmalı: bir fonksiyon yalnızca bir amacı gerçekleştirmek için yazılmalı, birden fazla iş yapıyorsa, anlaşılması ve test edilmesi daha zor olacaktır.
+Tek amaçlılığı test etmenin bir yolu da, içerisinden başka isimde bir fonksiyon daha çıkarabiliyorsak o tek bir şeyi yapmıyor demektir.
+Fonksiyonlar üstten alta okulmalıdır. Kod, yukarıdan aşağıya doğru okunan bir hikaye gibi okunmalıdır.
+Biricik Soyutlama seviyesi.
+Fonksiyon Argümanları: mümkünse 0 (niladic) gerekirse 1 (monadic) 2 (dyadic) de olabilir mümkünse 3 (triadic) kullanma
+üçten fazlası (polyadic) çok özel gerekçe gerektirir o yüzden kullanılmamalı.
+Fonksiyonlara "Flag" argümanları girmek doğru değildir ve fonksiyonu karmaşıklaştırır.
+Switch ifadelerinden kaçınılmalıdır. Switch ifadeleri genellikle uzun ve anlaşılması zordur.
+
+
+```
+public void delete(Page page) {
+ try {
+ deletePageAndAllReferences(page);
+ }
+ catch (Exception e) {
+ logError(e);
+ }
+ }
+ private void deletePageAndAllReferences(Page page) throws Exception {
+ deletePage(page);
+ registry.deleteReference(page.name);
+ configKeys.deleteKey(page.name.makeKey());
+ }
+ private void logError(Exception e) {
+ logger.log(e.getMessage());
+ }
+```
+
+Yukarıdaki kod parçasında deletePageAndAllRferences() fonksiyonu bütün işi yapıyor olmasına rağmen delete fonksiyonunda hata yakalama yapılmış ve asıl kodun okunabilirliği ve değiştirilebilirliği sağlanmış.
+
+
  
