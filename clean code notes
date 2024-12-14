@@ -3,7 +3,6 @@ Bu bölüm, temiz kod kavramını ve neden önemli olduğunu ele alıyor.
 Kötü kodun, yazılım projelerinde zamanla birikerek büyük sorunlara yol açabileceği, bakım maliyetini artırabileceği ve geliştirmeyi yavaşlatabileceği vurgulanıyor.
 Temiz kod yazmanın bir zanaat olduğu, tıpkı diğer zanaatlar gibi ustalık gerektirdiği belirtiliyor.
 
-
 Bölüm 2: Anlamlı İsimler
 Bu bölüm, yazılımda kullanılan isimlerin (değişkenler, fonksiyonlar, sınıflar, paketler vb.) anlamlı ve açıklayıcı olması gerektiğini vurguluyor. 
 Anlamlı isimler kullanmanın, kodun okunabilirliğini ve anlaşılırlığını artırdığı, böylece kodun bakımını ve geliştirilmesini kolaylaştırdığı belirtiliyor.
@@ -33,6 +32,9 @@ Fonksiyon Argümanları: mümkünse 0 (niladic) gerekirse 1 (monadic) 2 (dyadic)
 üçten fazlası (polyadic) çok özel gerekçe gerektirir o yüzden kullanılmamalı.
 Fonksiyonlara "Flag" argümanları girmek doğru değildir ve fonksiyonu karmaşıklaştırır.
 Switch ifadelerinden kaçınılmalıdır. Switch ifadeleri genellikle uzun ve anlaşılması zordur.
+
+Komut Sorgu Ayrımı, bir fonksiyonun ya bir şey yapan bir komut ya da bir değer döndüren bir sorgu olması gerektiğini, ancak her ikisini birden olmaması gerektiğini belirtir.
+Başka bir deyişle, bir fonksiyon bir değeri değiştirirse, bir değer döndürmemelidir ve bir değer döndürürse, hiçbir değeri değiştirmemelidir.
 
 
 ```
