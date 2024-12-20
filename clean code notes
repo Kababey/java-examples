@@ -59,4 +59,55 @@ public void delete(Page page) {
 Yukarıdaki kod parçasında deletePageAndAllRferences() fonksiyonu bütün işi yapıyor olmasına rağmen delete fonksiyonunda hata yakalama yapılmış ve asıl kodun okunabilirliği ve değiştirilebilirliği sağlanmış.
 
 
- 
+Bölüm 4: Yorumlar 
+Temiz kod yazmada amaç yoruma ihtiyaç duymadan kod yazabilmektir. Ancak bazı durumlarda kodumuzu açıklamak zorunda kalabiliriz bu gibi durumlarda,
+kodumuzda değişiklik yaparak yorum yazmadan kaçınamıyorsak yorum yazabiliriz, her yorum yazdığımızda kendimizi daha az güvende hissetmeliyiz, çünkü yorum demek 
+kendini açıklayamayan kod demektir.
+
+
+Yazılan yorumlar, kod üzerinde yapılan güncellemelerden sonra ilgili kod bloğundan ayrılıp yetim kalabilir veya 
+değişen kod ile bağlamından kopup yanlış yönlendirme yapılabilir. Bu sebeple yorum yapılmaması yersiz yorumdan daha iyidir. 
+Kötü yazılmış bir kodu yorumla düzeltmeye çalışmayın! onun yerine kodu temizleyin. 
+
+Kendimixi kodda açıklayınız, yorumla kodu açıklayacağınıza yazdığınız kod anlamlı isimlendirilsin ve kendini açıklayabilsin. Örneğin :
+
+// Check to see if the employee is eligible for full benefits
+if ((employee.flags & HOURLY_FLAG) && 
+     (employee.age > 65))
+
+we can eliminate the comment by creating a function that has name as the process and explains itself.
+
+if (employee.isEligibleForFullBenefits())
+
+Yasal Yorumlar: Bazen kod yazma standartları bize önemli yorumlar yazmamızı zorunlu kılar. Örneğin telif ve kaynak belirtmek için yorum yazmak zorunda kalabiliriz.
+Yine de eğer mümkünse bu tarz yorumlar yapmak yerine bir standart lisans veya dışarıdaki bir dosyaya gömebilirsiniz.
+
+Bilgi Veren Yorumlar: Bazı yorumlar bilgi verme amacı taşır mesela bir regular expression formatında hangi deseni yakalamaya çalışıldığını yorum ile anlatılabilir.
+Örneğin:
+// format matched kk:mm:ss EEE, MMM dd, yyyy
+Pattern timeMatcher = Pattern.compile(
+   " \\d*:\\d*:\\d* \\w*, \\w* \\d*, \\d*");
+
+Niyet açıklayan yorumlar: Bilgi veren yorumların da ötesinde bir kod parçasında neyi amaçladığını anlatabilir. Bunu yaparken çok dikkatli olunmalıdır.
+
+Açıklayıcı Yorumlar: bir kod parçasında bazı elemanların ne anlama geldiğini daha açık bir şekilde görülebilmesi için eklenebilir.
+Örneğin: 
+if(a.compareTo(b) == -1)    // a < b
+
+Uyarı Amaccıyla Yazılan Yorumlar: Bazen programcı diğer programcıyı uyarmak için yorum yazabilir. 
+// It takes avg. 5 minutes to run this code with 2.4 GHz CPU 
+
+Yapılacaklar (TODO) Belirtmek İçin Yazılan Yorumlar: Eksik bırakılan ve yazılması gereken kodları unutmamak için 
+veya planlamak için TODO'lar yorum olarak eklenebilir "//TODO: ... "
+
+Amplifikasyon İçin Yazılan Yorumlar: Kod parçasının önemini vurgulamak için yorum yazılabilir.
+
+KÖTÜ YORUMLAR
+Herhangi bir işe yaramayan sadece yorum yazmak için yazılmış yorumlardır.
+Örneğin:
+/**
+* The container event listeners for this Container.
+*/
+protected ArrayList listeners = new ArrayList();
+
+EN İYİ YORUM YAZILMAMIŞ YORUMDUR :D
